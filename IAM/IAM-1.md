@@ -34,3 +34,18 @@ When to use IAM role ?
 1. AWS EC2
 2. Mobile App
 3. 对员工的一次身份验证，而不是登入 AWS 控制台
+
+What's Policy
+
+````
+{
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Action": "dynamodb:*",
+    "Resource": "arn:aws:dynamodb:us-east-2:123456789012:table/Books"
+  }
+}```
+
+allow to any dynamodb actions on Resource: arn:aws:dynamodb:us-east-2:123456789012:table/Books
+````
